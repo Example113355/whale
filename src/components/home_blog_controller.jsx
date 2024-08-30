@@ -5,6 +5,8 @@ import Blog3 from '../pages/home-blog-page/blog_3';
 import Blog4 from '../pages/home-blog-page/blog_4';
 import Blog5 from '../pages/home-blog-page/blog_5';
 import Blog6 from '../pages/home-blog-page/blog_6';
+import Blog7 from '../pages/home-blog-page/blog_7';
+import Blog8 from '../pages/home-blog-page/blog_8';
 
 const HomeBlogController = () => {
     const { id } = useParams();
@@ -22,6 +24,10 @@ const HomeBlogController = () => {
             return <Blog5 />;
         case '6':
             return <Blog6 />;
+        case '7':
+            return <Blog7 />;
+        case '8':
+            return <Blog8 />;
         default:
             return <h1>404 Not Found</h1>;
     }
