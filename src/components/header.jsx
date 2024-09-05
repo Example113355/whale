@@ -9,8 +9,17 @@ const Header = () => {
         setShowMenu(!showMenu)
     }
 
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng)
+        localStorage.setItem('languageWhale', lng)
+    }
+
     return (
         <div className="header">
+            <div className="languages">
+                <button className='language-button' onClick={() => changeLanguage('en')}>English</button>
+                <button className='language-button' onClick={() => changeLanguage('vi')}>Tiếng Việt</button>
+            </div>
             <div className="header-top">
                 <h1 className="header-branch"><a href="/">WHALE BOTS</a></h1>
                 <div className={`header-buttons`}>

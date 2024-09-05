@@ -18,6 +18,7 @@
   background-color: #003871;
   color: #fff;
   margin-bottom: 60px;
+  padding-top: 10px;
 }
 
 .header-branch a {
@@ -163,6 +164,10 @@
   text-align: center;
 }
 
+.vip-footer span {
+  line-height: 30px;
+}
+
 /* Footer */
 .footer {
   margin-top: 40px;
@@ -223,7 +228,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
 }
 
 .language-button {
