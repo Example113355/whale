@@ -1,8 +1,13 @@
+import { useTranslation } from 'react-i18next'
+import Contact from '../../components/contact'
+
 const Blog5 = () => {
+    const { t } = useTranslation('blog5')
+
     return (
         <div className="blog-item">
             <div className="blog-item-container">
-                <h1>How to create multiple Bluestacks instances</h1>
+                <h1>{t("lines.1")}</h1>
                 <div className="blog-item-date">
                     <span className="posted-on">
                         <time className="updated" dateTime="2024-6-6T08:18:34+00:00">December 14, 2023</time>
@@ -14,19 +19,19 @@ const Blog5 = () => {
                 </div>
                 <div className="blog-item-content">
                     <span className="italic">
-                        <em>Greetings, my friends!</em>
+                        <em>{t("lines.2")}</em>
                     </span>
 
                     <p className="blog-item-paragraph">
-                        Did you know that you can play multiple games or the same game from multiple accounts?
+                        {t("lines.3")}
                     </p>
 
                     <p className="blog-item-paragraph">
-                        It is very easy to do thanks to <strong>Bluestacks Multi-instance Manager</strong> feature.
+                        {t("lines.4")} <strong>{t("lines.5")}</strong> {t("lines.6")}.
                     </p>
 
                     <p className="blog-item-paragraph">
-                        Step 1: Open <strong>Bluestacks Multi-instance Manager</strong> on your desktop.
+                        {t("lines.7")} <strong>{t("lines.8")}</strong> {t("lines.9")}
                     </p>
 
                     <div className="blog-item-img">
@@ -34,7 +39,7 @@ const Blog5 = () => {
                     </div>
 
                     <p className="blog-item-paragraph">
-                        Step 2: Click <strong>“Instance“</strong>, then choose <strong>“Fresh Instance”</strong> to create a new one or you can make a duplicate of an existing one by choosing <strong>“Clone Instance“</strong>. Note that you need to close the chosen instance before duplicating it.
+                        {t("lines.10")} <strong>{t("lines.11")}</strong>{t("lines.12")}<strong>{t("lines.13")}</strong> {t("lines.14")} <strong>{t("lines.15")}</strong>{t("lines.16")}
                     </p>
 
                     <div className="blog-item-img">
@@ -42,28 +47,28 @@ const Blog5 = () => {
                     </div>
 
                     <p className="blog-item-paragraph">
-                        Step 3: Please choose Android Version then <strong>“Create“</strong>.
+                        {t("lines.17")} <strong>{t("lines.18")}</strong>
                     </p>
 
                     <div className="blog-item-note">
-                        <p>Just a reminder!!!</p>
-                        <p>ROK bot to Nougat 32</p>
-                        <p>COD bot to Nougat 64</p>
+                        <p>{t("lines.19")}</p>
+                        <p>{t("lines.20")}</p>
+                        <p>{t("lines.21")}</p>
                     </div>
 
                     <div className="blog-item-img">
                         <img src="https://i0.wp.com/whalebots.net/wp-content/uploads/2022/04/Screenshot_5.png?w=640&ssl=1" alt="" />
-                        <span className="img-description">Choose <strong>Nougat 32</strong> if you play <strong>ROK</strong></span>
+                        <span className="img-description">{t("lines.22")} <strong>Nougat 32</strong> {t("lines.23")} <strong>ROK</strong></span>
                     </div>
 
                     <div className="blog-item-img">
                         <img src="https://i0.wp.com/whalebots.net/wp-content/uploads/2023/12/image.png?w=661&ssl=1" alt="" />
-                        <span className="img-description">Choose <strong>Nougat 64</strong> if you play <strong>COD</strong></span>
+                        <span className="img-description">{t("lines.22")} <strong>Nougat 64</strong> {t("lines.23")} <strong>COD</strong></span>
                     </div>
 
                     <div className="blog-item-img">
                         <img src="https://i0.wp.com/whalebots.net/wp-content/uploads/2022/04/Screenshot_6.png?w=640&ssl=1" alt="" />
-                        <span className="img-description">The settings depend on your needs and device configurations</span>
+                        <span className="img-description">{t("lines.24")}</span>
                     </div>
 
                     <div className="blog-item-img">
@@ -71,34 +76,26 @@ const Blog5 = () => {
                     </div>
 
                     <p className="blog-item-paragraph">
-                        Step 4: Open your new instance to set up and install the game.
+                        {t("lines.25")}
                     </p>
 
                     <p className="blog-item-paragraph">
-                        If you need any help, we will always be available to solve your problems and make you satisfied!
+                        {t("lines.26")}
                     </p>
 
                     <p className="blog-item-paragraph">
-                        Your interest and opinions are regarded as the motivation for us to develop the bot!
+                        {t("lines.27")}
                     </p>
 
                     <p className="blog-item-paragraph">
-                        We can ensure that we will constantly upgrade and improve our product, listen to your feedback to make the best one for all of you!
+                        {t("lines.28")}
                     </p>
 
                     <div className="blog-item-img">
                         <img src="https://i0.wp.com/whalebots.net/wp-content/uploads/2022/07/image.png?w=794&ssl=1" alt="" />
                     </div>
                 </div>
-                <div className="blog-item-contact">
-                    <h2>Contact us whenever you need:</h2>
-
-                    <ul>
-                        <li>Via email:  whalebots.net@gmail.com </li>
-                        <li>Via Discord: <a href="https://discord.gg/kDRGWmu9Nf">https://discord.gg/kDRGWmu9Nf </a></li>
-                        <li>Via Facebook: <a href="https://www.facebook.com/WhaleBots.net/">https://www.facebook.com/WhaleBots.net/</a></li>
-                    </ul>
-                </div>
+                <Contact />
             </div>
         </div>
     )

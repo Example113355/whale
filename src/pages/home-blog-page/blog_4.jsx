@@ -1,8 +1,13 @@
+import { useTranslation } from 'react-i18next'
+import Contact from '../../components/contact'
+
 const Blog4 = () => {
+    const { t } = useTranslation('blog4')
+
     return (
         <div className="blog-item">
             <div className="blog-item-container">
-                <h1>How to become a VIP</h1>
+                <h1>{t("lines.1")}</h1>
                 <div className="blog-item-date">
                     <span className="posted-on">
                         <time className="updated" dateTime="2024-6-6T08:18:34+00:00">July 6, 2024</time>
@@ -12,10 +17,10 @@ const Blog4 = () => {
                         Uncategorized
                     </span>
                 </div>
-                <h3>How to get VIP code 24/24 automatically</h3>
+                <h3>{t("lines.2")}</h3>
                 <div className="blog-item-content">
                     <div className="blog-item-paragraph">
-                        Here is how to buy VIP code automatically!
+                        {t("lines.3")}
                     </div>
 
                     <div className="blog-item-video">
@@ -23,44 +28,44 @@ const Blog4 = () => {
                     </div>
 
                     <div className="blog-item-paragraph">
-                        <em><strong>Step 1:</strong></em> Click the link below to our website:
+                        <em><strong>{t("lines.4")}</strong></em> {t("lines.5")}
                     </div>
 
                     <div className="blog-item-download">
                         <a href="/vip">
-                            VIP PAGE
+                            {t("lines.6")}
                         </a>
                     </div>
 
                     <div className="blog-item-img">
                         <img src="https://i0.wp.com/whalebots.net/wp-content/uploads/2022/05/image.png?w=1218&ssl=1" alt="" />
-                        <span className="img-description">Choose “Login” and log in with your Whalebots account or “Sign Up” if you have not have one!</span>
+                        <span className="img-description">{t("lines.7")}</span>
                     </div>
 
                     <div className="blog-item-paragraph">
-                        After getting access to the website, please log in your Whalebots account!
+                        {t("lines.8")}
                     </div>
 
                     <div className="blog-item-img">
                         <img src="https://i0.wp.com/whalebots.net/wp-content/uploads/2022/05/image-1.png?w=590&ssl=1" alt="" />
-                        <span className="img-description">Fill in your id and password to log in</span>
+                        <span className="img-description">{t("lines.9")}</span>
                     </div>
 
                     <div className="blog-item-paragraph">
-                        <em><strong>Step 2:</strong></em> Choose “Get VIP code” and pick the game you want, then choose the code you want.
+                        <em><strong>{t("lines.10")}</strong></em> {t("lines.11")}
                     </div>
 
                     <div className="blog-item-img">
                         <img src="https://i0.wp.com/whalebots.net/wp-content/uploads/2022/05/image-2.png?w=1173&ssl=1" alt="" />
-                        <span className="img-description">Select the game you want to buy code</span>
+                        <span className="img-description">{t("lines.12")}</span>
                     </div>
 
                     <div className="blog-item-paragraph">
-                        Then there will be types of VIP code of each game, choose a code that meets your needs.
+                        {t("lines.13")}
                     </div>
 
                     <div className="blog-item-paragraph">
-                        Remember to check your cart carefully before checking out (type and number of codes)
+                        {t("lines.14")}
                     </div>
 
                     <div className="blog-item-img">
@@ -68,24 +73,24 @@ const Blog4 = () => {
                     </div>
 
                     <div className="blog-item-paragraph">
-                        <em><strong>Step 3:</strong></em> Make your payment with CryptoCurrency (you can select which kind of currency you want). After successfully paying, your VIP code will appear on the website.
+                        <em><strong>{t("lines.15")}</strong></em> {t("lines.16")}
                     </div>
 
                     <div className="blog-item-img">
                         <img src="https://i0.wp.com/whalebots.net/wp-content/uploads/2022/06/Screenshot_1.jpg?w=403&ssl=1" alt="" />
-                        <span className="img-description">For example</span>
+                        <span className="img-description">{t("lines.17")}</span>
                     </div>
 
                     <div className="blog-item-paragraph">
-                        If you are not able to make an automatic payment on the website, please leave a message at our Facebook fanpage or Discord, our supporters will help.
+                        {t("lines.18")}
                     </div>
 
                     <div className="blog-item-paragraph">
-                        <em><strong>Step 4:</strong></em> Activate your VIP code.
+                        <em><strong>{t("lines.19")}</strong></em> {t("lines.20")}
                     </div>
 
                     <div className="blog-item-paragraph">
-                        Choose “Buy VIP”, then “Enter VIP code”
+                        {t("lines.21")}
                     </div>
 
                     <div className="blog-item-img">
@@ -93,7 +98,7 @@ const Blog4 = () => {
                     </div>
 
                     <div className="blog-item-paragraph">
-                        Copy and enter your code here, then click “Apply”
+                        {t("lines.22")}
                     </div>
 
                     <div className="blog-item-img">
@@ -102,15 +107,15 @@ const Blog4 = () => {
 
                     <div className="blog-item-img">
                         <img src="https://i0.wp.com/whalebots.net/wp-content/uploads/2022/05/image-7.png?w=320&ssl=1" alt="" />
-                        <span className="img-description">All done!</span>
+                        <span className="img-description">{t("lines.23")}</span>
                     </div>
 
                     <div className="blog-item-paragraph">
-                        After the code is activated successfully, then run them again.
+                        {t("lines.24")}
                     </div>
 
                     <div className="blog-item-paragraph">
-                        You can review your VIP codes at “My VIP code“
+                        {t("lines.25")}
                     </div>
 
                     <div className="blog-item-img">
@@ -118,23 +123,15 @@ const Blog4 = () => {
                     </div>
 
                     <div className="blog-item-note-red">
-                        <div><strong>Note:</strong></div>
-                        On one emulator window, you can use or change any game accounts. A Whalebots account with the activated VIP code can be logged in on any devices, but note that you can log in from only 1 device at the same time.
+                        <div><strong>{t("lines.26")}</strong></div>
+                        {t("lines.27")}
                     </div>
 
                     <div className="blog-item-img">
                         <img src="https://i0.wp.com/whalebots.net/wp-content/uploads/2022/07/image.png?w=794&ssl=1" alt="" />
                     </div>
                 </div>
-                <div className="blog-item-contact">
-                    <h2>Contact us whenever you need:</h2>
-
-                    <ul>
-                        <li>Via email:  whalebots.net@gmail.com </li>
-                        <li>Via Discord: <a href="https://discord.gg/kDRGWmu9Nf">https://discord.gg/kDRGWmu9Nf </a></li>
-                        <li>Via Facebook: <a href="https://www.facebook.com/WhaleBots.net/">https://www.facebook.com/WhaleBots.net/</a></li>
-                    </ul>
-                </div>
+                <Contact />
             </div>
         </div>
     )

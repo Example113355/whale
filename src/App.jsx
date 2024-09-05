@@ -3,6 +3,7 @@ import {
   Routes, Route, useLocation
 } from 'react-router-dom'
 import './assets/style.css'
+import './assets/responsive.css'
 
 import HomePage from './pages/home'
 import HomeBlogController from './components/home_blog_controller'

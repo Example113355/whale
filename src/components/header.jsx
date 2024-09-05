@@ -1,18 +1,43 @@
+import { useTranslation } from 'react-i18next'
+import React, { useState } from 'react'
+
 const Header = () => {
+    const [t, i18n] = useTranslation('global')
+    const [showMenu, setShowMenu] = useState(false)
+
+    const toggleMenu = () => {
+        setShowMenu(!showMenu)
+    }
+
     return (
         <div className="header">
             <div className="header-top">
                 <h1 className="header-branch"><a href="/">WHALE BOTS</a></h1>
-                <div className="header-buttons">
+                <div className={`header-buttons`}>
                     <div className="header-button">
-                        <a href="/vip">GET VIP</a>
+                        <a href="/vip">{t("header.vipButton")}</a>
                     </div>
 
                     <div className="header-button">
                         <a href="https://whalebots.net/download-whalebots/">DOWNLOAD</a>
                     </div>
                 </div>
+                <button className="menu-button" onClick={toggleMenu}>
+                    ☰
+                </button>
             </div>
+
+            {showMenu && (
+                <div className={`mobile-header-buttons`}>
+                    <div className="header-button">
+                        <a href="/vip">{t("header.vipButton")}</a>
+                    </div>
+
+                    <div className="header-button">
+                        <a href="https://whalebots.net/download-whalebots/">DOWNLOAD</a>
+                    </div>
+                </div>
+            )}
 
             <div className="header-bot">
                 <svg id="bigTriangleShadow" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">

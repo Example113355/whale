@@ -1,7 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faDiscord, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
+import { useTranslation } from 'react-i18next'
+
 const Footer = () => {
+    const [t, i18n] = useTranslation('global')
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng)
+        localStorage.setItem('languageWhale', lng)
+    }
+
     return (
         <div className="footer">
             <svg id="bigTriangleShadow" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -35,6 +44,10 @@ const Footer = () => {
 
             <div className="footer-copyright">
                 <p>© 2024 WHALE BOTS</p>
+                <div className="languages">
+                    <button className='language-button' onClick={() => changeLanguage('en')}>English</button>
+                    <button className='language-button' onClick={() => changeLanguage('vi')}>Tiếng Việt</button>
+                </div>
             </div>
         </div>
     )

@@ -1,0 +1,57 @@
+{
+    "header": {
+        "vipButton": "GET VIP"
+    },
+    "cart": {
+        "header1": "Cart detail",
+        "header2": "Checkout",
+        "momo": "Pay with Momo",
+        "paypal": "Pay with Paypal",
+        "bank": "Pay by Bank account",
+        "phone": "Phone number",
+        "receiver": "Receiver",
+        "amount": "Amount",
+        "scanMomo": "Scan MOMO qr-code",
+        "bankName": "Bank",
+        "accountNumber": "Account number",
+        "note": "Note",
+        "note1": "Don't write anything to the description",
+        "note2": "Set as default ( or Zalo name )",
+        "scanBank": "Scan Bank qr-code",
+        "contactZalo": "Contact Zalo to checkout"
+    },
+    "blogs": {
+        "1": {
+            "name": "HOW TO USE COD BOT",
+            "description": "Greetings, my friends! We would like to introduce a"
+        },
+        "2": {
+            "name": "CALL OF DRAGONS BOT",
+            "description": "Hello my dear Lords, In the mystical realm of gaming,"
+        },
+        "3": {
+            "name": "RISE OF KINGDOMS BOT",
+            "description": "Hello, my dear Governors! Rise of Kingdoms is one of"
+        },
+        "4": {
+            "name": "HOW TO BECOME A VIP",
+            "description": "How to get VIP code 24/24 automatically Here is how"
+        },
+        "5": {
+            "name": "HOW TO CREATE MULTIPLE BLUESTACKS INSTANCES",
+            "description": "Greetings, my friends! Did you know that you can play"
+        },
+        "6": {
+            "name": "How to add WhaleBots to exclusion of Windows Security",
+            "description": "Hello Governors! If you have below problems while using our"
+        },
+        "7": {
+            "name": "What to do in the early stage of ROK?",
+            "description": "Here is a way to play many accounts from the"
+        },
+        "8": {
+            "name": "How to use ROK Bot",
+            "description": "Greetings, my friends! We would like to introduce a newly"
+        }
+    }
+}

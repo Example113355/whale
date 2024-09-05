@@ -6,11 +6,14 @@ import MomoQrCode from '../assets/icon/momo_qr_code.jpg';
 import BankQrCode from '../assets/icon/bank_qr_code.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next'
+import { USD_VND } from '../utils/const';
 
 const CheckoutItem = ({ type, total }) => {
     const [showContent, setShowContent] = useState(false);
-    var item_header = '';
-    var item_icon = '';
+    const { t } = useTranslation('global')
+    let item_header = '';
+    let item_icon = '';
 
     const toggleShowContent = () => {
         setShowContent(!showContent);
@@ -18,15 +21,15 @@ const CheckoutItem = ({ type, total }) => {
 
     switch (type) {
         case 'momo':
-            item_header = 'Pay with Momo';
+            item_header = t("cart.momo");
             item_icon = MomoIcon;
             break;
         case 'paypal':
-            item_header = 'Pay with Paypal';
+            item_header = t("cart.paypal");
             item_icon = PaypalIcon;
             break;
         case 'bank':
-            item_header = 'Pay by Bank accout';
+            item_header = t("cart.bank");
             item_icon = BankIcon;
             break;
         default:
@@ -46,6 +49,9 @@ const CheckoutItem = ({ type, total }) => {
                         <div className="checkout-total">
                             {total}$
                         </div>
+                        <div className="checkout-total">
+                            {Math.ceil(total * USD_VND).toLocaleString('vi-VN')}Đ
+                        </div>
                     </div>
                 </div>
                 <div className="checkout-item-head--bottom">
@@ -59,30 +65,30 @@ const CheckoutItem = ({ type, total }) => {
                     type === 'momo' ? (
                         <div className="checkout-item-content">
                             <div className="content-item">
-                                <span className='content-item-left'>Phone number: </span>
+                                <span className='content-item-left'>{t("cart.phone")}: </span>
                                 <span className='content-item-right'>0909090909</span>
                             </div>
                             <div className="content-item">
-                                <span className='content-item-left'>Receiver: </span>
+                                <span className='content-item-left'>{t("cart.receiver")}: </span>
                                 <span className='content-item-right'>Nguyễn Văn A</span>
                             </div>
                             <div className="content-item">
-                                <span className='content-item-left'>Amount: </span>
+                                <span className='content-item-left'>{t("cart.amount")}: </span>
                                 <span className='content-item-right'>{total}$</span>
                             </div>
                             <div className="content-item content-code">
-                                <span className='content-item-left'>Scan MOMO qr-code:</span>
+                                <span className='content-item-left'>{t("cart.scanMomo")}:</span>
                                 <img className='content-item-code' src={MomoQrCode} alt="" />
                             </div>
                         </div>
                     ) : type === 'paypal' ? (
                         <div className="checkout-item-content">
                             <div className="content-item">
-                                <span className='content-item-left'>Receiver: </span>
+                                <span className='content-item-left'>{t("cart.receiver")}: </span>
                                 <span className='content-item-right'>Nguyễn Văn A</span>
                             </div>
                             <div className="content-item">
-                                <span className='content-item-left'>Amount: </span>
+                                <span className='content-item-left'>{t("cart.amount")}: </span>
                                 <span className='content-item-right'>{total}$</span>
                             </div>
                             <div className="content-item">
@@ -93,34 +99,34 @@ const CheckoutItem = ({ type, total }) => {
                     ) : (
                         <div className="checkout-item-content">
                             <div className="content-item">
-                                <span className='content-item-left'>Bank: </span>
+                                <span className='content-item-left'>{t("cart.bankName")}: </span>
                                 <span className='content-item-right'>ShinhanBank</span>
                             </div>
                             <div className="content-item">
-                                <span className='content-item-left'>Account number: </span>
+                                <span className='content-item-left'>{t("cart.accountNumber")}: </span>
                                 <span className='content-item-right'>700030660523</span>
                             </div>
                             <div className="content-item">
-                                <span className='content-item-left'>Receiver: </span>
+                                <span className='content-item-left'>{t("cart.receiver")}: </span>
                                 <span className='content-item-right'>PHẠM HOÀNG ANH</span>
                             </div>
                             <div className="content-item">
-                                <span className='content-item-left'>Note: </span>
-                                <span className='content-item-right'>Don't write anything to the description</span>
-                                <span className='content-item-right'>Set as default ( or Zalo name )</span>
+                                <span className='content-item-left'>{t("cart.note")}: </span>
+                                <span className='content-item-right'>{t("cart.note1")}</span>
+                                <span className='content-item-right'>{t("cart.note2")}</span>
                             </div>
                             <div className="content-item">
-                                <span className='content-item-left'>Amount: </span>
+                                <span className='content-item-left'>{t("cart.amount")}: </span>
                                 <span className='content-item-right'>{total}$</span>
                             </div>
                             <div className="content-item content-code">
-                                <span className='content-item-left'>Scan bank qr-code:</span>
+                                <span className='content-item-left'>{t("cart.scanBank")}:</span>
                                 <img className='content-item-code' src={BankQrCode} alt="" />
                             </div>
                         </div>
                     )
                 }
-                <button onClick={() => window.open('https://zalo.me/0971844044', '_blank', 'noopener,noreferrer')} className='contact-button'>Contact Zalo to checkout</button>
+                <button onClick={() => window.open('https://zalo.me/0971844044', '_blank', 'noopener,noreferrer')} className='contact-button'>{t("cart.contactZalo")}</button>
             </div>
         </div>
     );

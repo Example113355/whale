@@ -1,0 +1,57 @@
+{
+    "header": {
+        "vipButton": "TRANG VIP"
+    },
+    "cart": {
+        "header1": "Chi tiết giỏ hàng",
+        "header2": "Thanh toán",
+        "momo": "Thanh toán bằng Momo",
+        "paypal": "Thanh toán bằng Paypal",
+        "bank": "Thanh toán bằng tài khoản ngân hàng",
+        "phone": "Số điện thoại",
+        "receiver": "Người nhận",
+        "amount": "Số tiền",
+        "scanMomo": "Quét mã QR MOMO",
+        "bankName": "Ngân hàng",
+        "accountNumber": "Số tài khoản",
+        "note": "Ghi chú",
+        "note1": "Không viết bất cứ điều gì vào phần mô tả",
+        "note2": "Đặt làm mặc định (hoặc tên Zalo)",
+        "scanBank": "Quét mã QR Ngân hàng",
+        "contactZalo": "Liên hệ Zalo để thanh toán"
+    },
+    "blogs": {
+        "1": {
+            "name": "CÁCH SỬ DỤNG COD BOT",
+            "description": "Xin chào các bạn! Chúng tôi xin giới thiệu một"
+        },
+        "2": {
+            "name": "CALL OF DRAGONS BOT",
+            "description": "Xin chào các Lãnh chúa thân mến, Trong thế giới trò chơi huyền bí"
+        },
+        "3": {
+            "name": "RISE OF KINGDOMS BOT",
+            "description": "Xin chào các Thống đốc thân mến! Rise of Kingdoms là một trong những"
+        },
+        "4": {
+            "name": "CÁCH TRỞ THÀNH VIP",
+            "description": "Cách nhận mã VIP 24/24 tự động Đây là cách thực hiện"
+        },
+        "5": {
+            "name": "CÁCH TẠO NHIỀU PHIÊN BẢN BLUESTACKS",
+            "description": "Xin chào các bạn! Bạn có biết rằng bạn có thể chơi"
+        },
+        "6": {
+            "name": "Cách thêm WhaleBots vào loại trừ Windows Security",
+            "description": "Xin chào các Thống đốc! Nếu bạn gặp phải các vấn đề dưới đây khi sử dụng"
+        },
+        "7": {
+            "name": "Cần làm gì trong giai đoạn đầu của ROK?",
+            "description": "Đây là cách chơi nhiều tài khoản từ"
+        },
+        "8": {
+            "name": "Cách sử dụng ROK Bot",
+            "description": "Xin chào các bạn! Chúng tôi muốn giới thiệu một"
+        }
+    }
+}
