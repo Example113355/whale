@@ -18,7 +18,9 @@
         "note1": "Don't write anything to the description",
         "note2": "Set as default ( or Zalo name )",
         "scanBank": "Scan Bank qr-code",
-        "contactZalo": "Contact Zalo to checkout"
+        "contactZalo": "Contact Zalo to checkout",
+        "contactTelegram": "Contact Telegram to checkout",
+        "contactWhatsapp": "Contact WhatsApp to checkout"
     },
     "blogs": {
         "1": {

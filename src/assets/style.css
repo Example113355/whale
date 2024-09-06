@@ -13,6 +13,42 @@
   display: none;
 }
 
+/* floating button */
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.floating-button img {
+  width: 40px;
+}
+
+.contact-list {
+  width: 200px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  background: rgb(136, 141, 235);
+  padding: 10px;
+  border-radius: 10px;
+  transform: translateY(-40px);
+  position: relative;
+  top: -40px;
+}
+
+.contact-btn:hover {
+  opacity: 0.8;
+}
+
 /* Header */
 .header {
   background-color: #003871;
@@ -728,19 +764,32 @@
   border-radius: 3px;
 }
 
+.contact {
+  display: flex;
+  column-gap: 8px;
+}
+
 .contact-button {
   width: 100%;
   padding: 10px 0;
   border: none;
   border-radius: 10px;
-  background-color: #eb6666;
   color: #fff;
   cursor: pointer;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c71c5;
+}
+
+.contact-button img {
+  width: 20px;
+  margin-right: 10px;
 }
 
 .contact-button:hover {
-  background-color: #c51c1c;
+  opacity: 0.8;
 }
 
 .content-item-code {

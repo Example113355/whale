@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom'
 import './assets/style.css'
 import './assets/responsive.css'
+import 'animate.css';
 
 import HomePage from './pages/home'
 import HomeBlogController from './components/home_blog_controller'
@@ -14,6 +15,7 @@ import Footer from './components/footer'
 import VipHeader from './components/vip_header'
 import VipFooter from './components/vip_footer'
 import CartPage from './pages/cart'
+import FloatingButton from './components/floatingButton'
 
 const App = () => {
   const location = useLocation()
@@ -34,6 +36,7 @@ const App = () => {
 
   return (
     <>
+      <FloatingButton />
       {renderHeader()}
 
       <Routes>

@@ -4,6 +4,9 @@ import PaypalIcon from '../assets/icon/paypal.svg';
 import BankIcon from '../assets/icon/bank.png';
 import MomoQrCode from '../assets/icon/momo_qr_code.jpg';
 import BankQrCode from '../assets/icon/bank_qr_code.png';
+import ZaloIcon from '../assets/icon/zalo.svg';
+import TelegramIcon from '../assets/icon/telegram.svg';
+import WhatsappIcon from '../assets/icon/whatsapp.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next'
@@ -126,7 +129,20 @@ const CheckoutItem = ({ type, total }) => {
                         </div>
                     )
                 }
-                <button onClick={() => window.open('https://zalo.me/0971844044', '_blank', 'noopener,noreferrer')} className='contact-button'>{t("cart.contactZalo")}</button>
+                <div className="contact">
+                    <button onClick={() => window.open('https://zalo.me/0971844044', '_blank', 'noopener,noreferrer')} className='contact-button contact-button-zalo'>
+                        <img src={ZaloIcon} alt="" />
+                        {t("cart.contactZalo")}
+                    </button>
+                    <button onClick={() => window.open('https://zalo.me/0971844044', '_blank', 'noopener,noreferrer')} className='contact-button contact-button-telegram'>
+                        <img src={TelegramIcon} alt="" />
+                        {t("cart.contactTelegram")}
+                    </button>
+                    <button onClick={() => window.open('https://zalo.me/0971844044', '_blank', 'noopener,noreferrer')} className='contact-button contact-button-whatsapp'>
+                        <img src={WhatsappIcon} alt="" />
+                        {t("cart.contactWhatsapp")}
+                    </button>
+                </div>
             </div>
         </div>
     );

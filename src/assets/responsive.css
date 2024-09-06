@@ -2,6 +2,9 @@
     .package-item {
         width: 33.33%;
     }
+    .contact {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 992px) {

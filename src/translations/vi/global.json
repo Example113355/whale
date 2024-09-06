@@ -18,7 +18,9 @@
         "note1": "Không viết bất cứ điều gì vào phần mô tả",
         "note2": "Đặt làm mặc định (hoặc tên Zalo)",
         "scanBank": "Quét mã QR Ngân hàng",
-        "contactZalo": "Liên hệ Zalo để thanh toán"
+        "contactZalo": "Liên hệ Zalo để thanh toán",
+        "contactTelegram": "Liên hệ Telegram để thanh toán",
+        "contactWhatsapp": "Liên hệ WhatsApp để thanh toán"
     },
     "blogs": {
         "1": {
