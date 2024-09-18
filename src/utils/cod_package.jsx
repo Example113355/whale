@@ -4,7 +4,7 @@ const cod_packages = [
         name: '1 window - 1 day (free-trial)',
         vip: 'VIP',
         price: '0.00$',
-        isReduced: false,
+        isReduced: true,
         reduced_price: '0.00$',
     },
     {
@@ -12,7 +12,7 @@ const cod_packages = [
         name: '1 window - 7 days',
         vip: 'VIP',
         price: '5.00$',
-        isReduced: false,
+        isReduced: true,
         reduced_price: '4.00$',
     },
     {
@@ -20,7 +20,7 @@ const cod_packages = [
         name: '1 window - 30 days',
         vip: 'VIP',
         price: '15.00$',
-        isReduced: false,
+        isReduced: true,
         reduced_price: '10.00$',
     },
     {
@@ -28,7 +28,7 @@ const cod_packages = [
         name: '3 windows - 7 days',
         vip: 'VIP',
         price: '7.50$',
-        isReduced: false,
+        isReduced: true,
         reduced_price: '6.00$',
     },
     {
@@ -36,7 +36,7 @@ const cod_packages = [
         name: '3 windows - 30 days',
         vip: 'VIP',
         price: '20.00$',
-        isReduced: false,
+        isReduced: true,
         reduced_price: '15.00$',
     },
     {
@@ -44,7 +44,7 @@ const cod_packages = [
         name: '6 windows - 7 days',
         vip: 'VIP',
         price: '12.50$',
-        isReduced: false,
+        isReduced: true,
         reduced_price: '10.00$',
     },
     {
@@ -52,7 +52,7 @@ const cod_packages = [
         name: '6 windows - 30 days',
         vip: 'VIP',
         price: '30.00$',
-        isReduced: false,
+        isReduced: true,
         reduced_price: '25.00$',
     },
     {
@@ -60,7 +60,7 @@ const cod_packages = [
         name: '12 windows - 7 days',
         vip: 'VIP',
         price: '20.00$',
-        isReduced: false,
+        isReduced: true,
         reduced_price: '15.00$',
     },
     {
@@ -68,7 +68,7 @@ const cod_packages = [
         name: '12 windows - 30 days',
         vip: 'VIP',
         price: '45.00$',
-        isReduced: false,
+        isReduced: true,
         reduced_price: '38.00$',
     },
     {
@@ -76,7 +76,7 @@ const cod_packages = [
         name: '24 windows - 7 days',
         vip: 'VIP',
         price: '32.50$',
-        isReduced: false,
+        isReduced: true,
         reduced_price: '24.00$',
     },
     {
@@ -84,7 +84,7 @@ const cod_packages = [
         name: '24 windows - 30 days',
         vip: 'VIP',
         price: '70.00$',
-        isReduced: false,
+        isReduced: true,
         reduced_price: '60.00$',
     },
     {
@@ -92,7 +92,7 @@ const cod_packages = [
         name: '36 windows - 7 days',
         vip: 'VIP',
         price: '50.00$',
-        isReduced: false,
+        isReduced: true,
         reduced_price: '36.00$',
     },
     {
@@ -100,7 +100,7 @@ const cod_packages = [
         name: '36 windows - 30 days',
         vip: 'VIP',
         price: '110.00$',
-        isReduced: false,
+        isReduced: true,
         reduced_price: '90.00$',
     },
     {
@@ -108,7 +108,7 @@ const cod_packages = [
         name: '48 windows - 7 days',
         vip: 'VIP',
         price: '60.00$',
-        isReduced: false,
+        isReduced: true,
         reduced_price: '44.00$',
     },
     {
@@ -116,7 +116,7 @@ const cod_packages = [
         name: '48 windows - 30 days',
         vip: 'VIP',
         price: '140.00$',
-        isReduced: false,
+        isReduced: true,
         reduced_price: '110.00$',
     },
 ]
