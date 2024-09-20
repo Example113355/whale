@@ -25,6 +25,8 @@ const VipPackage = () => {
                         price={data[0].price}
                         isReduced={data[0].isReduced}
                         reduced_price={data[0].reduced_price}
+                        price_vi={data[0].price_vi}
+                        reduced_price_vi={data[0].reduced_price_vi}
                         type={type}
                     />
                 </div>
@@ -39,6 +41,8 @@ const VipPackage = () => {
                                 price={item.price}
                                 isReduced={item.isReduced}
                                 reduced_price={item.reduced_price}
+                                price_vi={item.price_vi}
+                                reduced_price_vi={item.reduced_price_vi}
                                 type={type}
                             />
                         ))

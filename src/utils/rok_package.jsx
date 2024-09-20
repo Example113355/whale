@@ -6,6 +6,8 @@ const rok_packages = [
         price: '0.00$',
         isReduced: false,
         reduced_price: '0.00$',
+        price_vi: '0 đ',
+        reduced_price_vi: '0 đ',
     },
     {
         id: 2,
@@ -14,6 +16,8 @@ const rok_packages = [
         price: '5.00$',
         isReduced: true,
         reduced_price: '4.00$',
+        price_vi: '100.000 đ',
+        reduced_price_vi: '92.000 đ',
     }, 
     {
         id: 3,
@@ -22,6 +26,8 @@ const rok_packages = [
         price: '10.00$',
         isReduced: true,
         reduced_price: '8.00$',
+        price_vi: '200.000 đ',
+        reduced_price_vi: '184.000 đ',
     },
     {
         id: 4,
@@ -30,6 +36,8 @@ const rok_packages = [
         price: '10.00$',
         isReduced: true,
         reduced_price: '15.00$',
+        price_vi: '250.000 đ',
+        reduced_price_vi: '230.000 đ',
     }, 
     {
         id: 5,
@@ -38,6 +46,8 @@ const rok_packages = [
         price: '28.00$',
         isReduced: true,
         reduced_price: '20.00$',
+        price_vi: '500.000 đ',
+        reduced_price_vi: '460.000 đ',
     },
     {
         id: 6,
@@ -46,6 +56,8 @@ const rok_packages = [
         price: '7.50$',
         isReduced: true,
         reduced_price: '6.00$',
+        price_vi: '150.000 đ',
+        reduced_price_vi: '138.000 đ',
     },
     {
         id: 7,
@@ -54,6 +66,8 @@ const rok_packages = [
         price: '12.50$',
         isReduced: true,
         reduced_price: '10.00$',
+        price_vi: '250.000 đ',
+        reduced_price_vi: '230.000 đ',
     },
     {
         id: 8,
@@ -62,6 +76,8 @@ const rok_packages = [
         price: '20.00$',
         isReduced: true,
         reduced_price: '15.00$',
+        price_vi: '400.000 đ',
+        reduced_price_vi: '345.000 đ',
     },
     {
         id: 9,
@@ -70,6 +86,8 @@ const rok_packages = [
         price: '40.00$',
         isReduced: true,
         reduced_price: '25.00$',
+        price_vi: '600.000 đ',
+        reduced_price_vi: '575.000 đ',
     },
     {
         id: 10,
@@ -78,6 +96,8 @@ const rok_packages = [
         price: '12.50$',
         isReduced: true,
         reduced_price: '10.00$',
+        price_vi: '250.000 đ',
+        reduced_price_vi: '230.000 đ',
     },
     {
         id: 11,
@@ -86,6 +106,8 @@ const rok_packages = [
         price: '20.00$',
         isReduced: true,
         reduced_price: '15.00$',
+        price_vi: '400.000 đ',
+        reduced_price_vi: '345.000 đ',
     },
     {
         id: 12,
@@ -94,6 +116,8 @@ const rok_packages = [
         price: '30.00$',
         isReduced: true,
         reduced_price: '25.00$',
+        price_vi: '600.000 đ',
+        reduced_price_vi: '575.000 đ',
     },
     {
         id: 13,
@@ -102,6 +126,8 @@ const rok_packages = [
         price: '60.00$',
         isReduced: true,
         reduced_price: '38.00$',
+        price_vi: '1.000.000 đ',
+        reduced_price_vi: '874.000 đ',
     },
     {
         id: 14,
@@ -110,6 +136,8 @@ const rok_packages = [
         price: '20.00$',
         isReduced: true,
         reduced_price: '15.00$',
+        price_vi: '400.000 đ',
+        reduced_price_vi: '345.000 đ',
     },
     {
         id: 15,
@@ -118,6 +146,8 @@ const rok_packages = [
         price: '32.50$',
         isReduced: true,
         reduced_price: '24.00$',
+        price_vi: '650.000 đ',
+        reduced_price_vi: '552.000 đ',
     },
     {
         id: 16,
@@ -126,6 +156,8 @@ const rok_packages = [
         price: '45.00$',
         isReduced: true,
         reduced_price: '38.00$',
+        price_vi: '900.000 đ',
+        reduced_price_vi: '874.000 đ',
     },
     {
         id: 17,
@@ -134,6 +166,8 @@ const rok_packages = [
         price: '90.00$',
         isReduced: true,
         reduced_price: '60.00$',
+        price_vi: '1.800.000 đ',
+        reduced_price_vi: '1.380.000 đ',
     },
     {
         id: 18,
@@ -142,6 +176,8 @@ const rok_packages = [
         price: '32.50$',
         isReduced: true,
         reduced_price: '24.00$',
+        price_vi: '600.000 đ',
+        reduced_price_vi: '552.000 đ',
     },
     {
         id: 19,
@@ -150,6 +186,8 @@ const rok_packages = [
         price: '55.00$',
         isReduced: true,
         reduced_price: '36.00$',
+        price_vi: '1.000.000 đ',
+        reduced_price_vi: '828.000 đ',
     },
     {
         id: 20,
@@ -158,6 +196,8 @@ const rok_packages = [
         price: '70.00$',
         isReduced: true,
         reduced_price: '60.00$',
+        price_vi: '1.400.000 đ',
+        reduced_price_vi: '1.380.000 đ',
     },
     {
         id: 21,
@@ -166,6 +206,8 @@ const rok_packages = [
         price: '140.00$',
         isReduced: true,
         reduced_price: '90.00$',
+        price_vi: '2.200.000 đ',
+        reduced_price_vi: '2.070.000 đ',
     },
     {
         id: 22,
@@ -174,6 +216,8 @@ const rok_packages = [
         price: '50.00$',
         isReduced: true,
         reduced_price: '36.00$',
+        price_vi: '1.000.000 đ',
+        reduced_price_vi: '828.000 đ',
     },
     {
         id: 23,
@@ -182,6 +226,8 @@ const rok_packages = [
         price: '60.00$',
         isReduced: true,
         reduced_price: '44.00$',
+        price_vi: '1.200.000 đ',
+        reduced_price_vi: '1.012.000 đ',
     },
     {
         id: 24,
@@ -190,6 +236,8 @@ const rok_packages = [
         price: '110.00$',
         isReduced: true,
         reduced_price: '90.00$',
+        price_vi: '2.200.000 đ',
+        reduced_price_vi: '2.070.000 đ',
     },
     {
         id: 25,
@@ -198,6 +246,8 @@ const rok_packages = [
         price: '140.00$',
         isReduced: true,
         reduced_price: '110.00$',
+        price_vi: '2.800.000 đ',
+        reduced_price_vi: '2.530.000 đ',
     },
     {
         id: 26,
@@ -206,6 +256,8 @@ const rok_packages = [
         price: '60.00$',
         isReduced: true,
         reduced_price: '44.00$',
+        price_vi: '1.200.000 đ',
+        reduced_price_vi: '1.012.000 đ',
     },
     {
         id: 27,
@@ -214,6 +266,8 @@ const rok_packages = [
         price: '70.00$',
         isReduced: true,
         reduced_price: '50.00$',
+        price_vi: '1.400.000 đ',
+        reduced_price_vi: '1.150.000 đ',
     },
     {
         id: 28,
@@ -222,6 +276,8 @@ const rok_packages = [
         price: '110.00$',
         isReduced: true,
         reduced_price: '140.00$',
+        price_vi: '2.600.000 đ',
+        reduced_price_vi: '2.530.000 đ',
     },
     {
         id: 29,
@@ -230,6 +286,8 @@ const rok_packages = [
         price: '160.00$',
         isReduced: true,
         reduced_price: '125.00$',
+        price_vi: '3.200.000 đ',
+        reduced_price_vi: '2.875.000 đ',
     },
 ]
 

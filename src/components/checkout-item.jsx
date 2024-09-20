@@ -5,20 +5,21 @@ import BankIcon from '../assets/icon/bank.png';
 import UsdtIcon from '../assets/icon/usdt.png';
 import MomoQrCode from '../assets/icon/momo_qr_code.jpg';
 import UsdtQrCode from '../assets/icon/usdt_qr_code.jpg';
-import BankQrCode from '../assets/icon/bank_qr_code.png';
+import BankQrCode from '../assets/icon/bank_qr_code.jpg';
 import ZaloIcon from '../assets/icon/zalo.svg';
 import TelegramIcon from '../assets/icon/telegram.svg';
 import WhatsappIcon from '../assets/icon/whatsapp.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next'
-import { USD_VND, ZALO, WHATSAPP } from '../utils/const';
+import { USD_VND, ZALO, WHATSAPP, PAYPAL, MOMO, USDT, BANKNAME, BANKNUMBER } from '../utils/const';
 
 const CheckoutItem = ({ type, total }) => {
     const [showContent, setShowContent] = useState(false);
-    const { t } = useTranslation('global')
+    const { t, i18n } = useTranslation('global')
     let item_header = '';
     let item_icon = '';
+    let selectedLanguage = i18n.language;
 
     const toggleShowContent = () => {
         setShowContent(!showContent);
@@ -52,7 +53,7 @@ const CheckoutItem = ({ type, total }) => {
                 <div className="checkout-item-content">
                     <div className="content-item">
                         <span className='content-item-left'>{t("cart.phone")}: </span>
-                        <span className='content-item-right'>0946212588</span>
+                        <span className='content-item-right'>{MOMO}</span>
                     </div>
                     <div className="content-item">
                         <span className='content-item-left'>{t("cart.receiver")}: </span>
@@ -60,7 +61,9 @@ const CheckoutItem = ({ type, total }) => {
                     </div>
                     <div className="content-item">
                         <span className='content-item-left'>{t("cart.amount")}: </span>
-                        <span className='content-item-right'>{total}$</span>
+                        <span className='content-item-right'>
+                            {selectedLanguage === 'vi'? total.toLocaleString('vi-VN') + ' đ': total.toFixed(2) + ' $'}
+                        </span>
                     </div>
                     <div className="content-item content-code">
                         <span className='content-item-left'>{t("cart.scanMomo")}:</span>
@@ -77,11 +80,13 @@ const CheckoutItem = ({ type, total }) => {
                     </div>
                     <div className="content-item">
                         <span className='content-item-left'>{t("cart.amount")}: </span>
-                        <span className='content-item-right'>{total}$</span>
+                        <span className='content-item-right'>
+                            {selectedLanguage === 'vi'? total.toLocaleString('vi-VN') + ' đ': total.toFixed(2) + ' $'}
+                        </span>
                     </div>
                     <div className="content-item">
                         <span className='content-item-left'>Paypal link: </span>
-                        <span className='content-item-right'>Paypalmina91@gmail.com</span>
+                        <span className='content-item-right'>{PAYPAL}</span>
                     </div>
                 </div>
             )
@@ -94,7 +99,13 @@ const CheckoutItem = ({ type, total }) => {
                     </div>
                     <div className="content-item">
                         <span className='content-item-left'>{t("cart.usdtAddress")}: </span>
-                        <span className='content-item-right'>TMGdwv5Pi7nxT4asifjzRsaJitU7mYTrwC</span>
+                        <span className='content-item-right'>{USDT}</span>
+                    </div>
+                    <div className="content-item">
+                        <span className='content-item-left'>{t("cart.amount")}: </span>
+                        <span className='content-item-right'>
+                            {selectedLanguage === 'vi'? total.toLocaleString('vi-VN') + ' đ': total.toFixed(2) + ' $'}
+                        </span>
                     </div>
                     <div className="content-item content-code">
                         <span className='content-item-left'>USDT QR-CODE:</span>
@@ -107,11 +118,11 @@ const CheckoutItem = ({ type, total }) => {
                 <div className="checkout-item-content">
                     <div className="content-item">
                         <span className='content-item-left'>{t("cart.bankName")}: </span>
-                        <span className='content-item-right'>ShinhanBank</span>
+                        <span className='content-item-right'>{BANKNAME}</span>
                     </div>
                     <div className="content-item">
                         <span className='content-item-left'>{t("cart.accountNumber")}: </span>
-                        <span className='content-item-right'>700030660523</span>
+                        <span className='content-item-right'>{BANKNUMBER}</span>
                     </div>
                     <div className="content-item">
                         <span className='content-item-left'>{t("cart.receiver")}: </span>
@@ -124,7 +135,9 @@ const CheckoutItem = ({ type, total }) => {
                     </div>
                     <div className="content-item">
                         <span className='content-item-left'>{t("cart.amount")}: </span>
-                        <span className='content-item-right'>{total}$</span>
+                        <span className='content-item-right'>
+                            {selectedLanguage === 'vi'? total.toLocaleString('vi-VN') + ' đ': total.toFixed(2) + ' $'}
+                        </span>
                     </div>
                     <div className="content-item content-code">
                         <span className='content-item-left'>{t("cart.scanBank")}:</span>
@@ -145,10 +158,7 @@ const CheckoutItem = ({ type, total }) => {
                     </div>
                     <div className="checkout-item-amount">
                         <div className="checkout-total">
-                            {total}$
-                        </div>
-                        <div className="checkout-total">
-                            {Math.ceil(total * USD_VND).toLocaleString('vi-VN')}Đ
+                            {selectedLanguage === 'vi'? total.toLocaleString('vi-VN') + ' đ': total.toFixed(2) + ' $'}
                         </div>
                     </div>
                 </div>

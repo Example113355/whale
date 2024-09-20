@@ -1,8 +1,11 @@
 import { Space, Table, Button } from 'antd';
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const CartTable = ({ setTotal }) => {
     const [cart, setCart] = useState([]);
+    const { i18n } = useTranslation();
+    let selectedLanguage = i18n.language;
 
     useEffect(() => {
         setCart(JSON.parse(localStorage.getItem('whaleCart')) || []);
@@ -45,7 +48,7 @@ const CartTable = ({ setTotal }) => {
         },
         {
             title: 'Price',
-            dataIndex: 'price',
+            dataIndex: selectedLanguage === 'vi' ? 'price_vi' : 'price',
             key: 'price',
         },
         {
@@ -64,9 +67,13 @@ const CartTable = ({ setTotal }) => {
             title: 'Sum',
             dataIndex: 'total',
             key: 'total',
-            render: (text, record) => (
-                <span>{(parseFloat(record.price.replace('$', '')) * record.quantity).toFixed(2)}$</span>
-            ),
+            render: (text, record) => {
+                if(selectedLanguage === 'vi') {
+                    return (parseFloat(record.price_vi.replace(/[đ.]/g, '')) * record.quantity).toLocaleString('vi-VN') + ' đ';
+                } else {
+                    return (parseFloat(record.price.replace('$', '')) * record.quantity).toFixed(2) + ' $';
+                }
+            },
         },
         {
             title: 'Action',
@@ -90,17 +97,22 @@ const CartTable = ({ setTotal }) => {
             rowKey="id"
             summary={() => {
                 let total = 0;
-                data.forEach(item => {
-                    total += parseFloat(item.price.replace('$', '')) * item.quantity;
-                });
-                total = total.toFixed(2);
+                if(selectedLanguage === 'vi') {
+                    data.forEach(item => {
+                        total += parseFloat(item.price_vi.replace(/[đ.]/g, '')) * item.quantity;
+                    });
+                } else {
+                    data.forEach(item => {
+                        total += parseFloat(item.price.replace('$', '')) * item.quantity;
+                    });
+                }
                 setTotal(total);
                 return (
                     <>
                         {data.length > 0 && (
                             <Table.Summary.Row>
                                 <Table.Summary.Cell className="cart-sum" colSpan={3}>Total</Table.Summary.Cell>
-                                <Table.Summary.Cell className="cart-sum-value">{total}$</Table.Summary.Cell>
+                                <Table.Summary.Cell className="cart-sum-value">{selectedLanguage === 'vi'? total.toLocaleString('vi-VN') + ' đ': total.toFixed(2) + ' $'}</Table.Summary.Cell>
                             </Table.Summary.Row>
                         )}
                     </>

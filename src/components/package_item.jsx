@@ -1,8 +1,11 @@
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-const PackageItem = ({id, name, vip, price, isReduced, reduced_price, type}) => {
+const PackageItem = ({id, name, vip, price, isReduced, reduced_price, type, price_vi, reduced_price_vi}) => {
     let thumbnail_img = '';
     let bg_img = '';
+    const { i18n } = useTranslation();
+    let selectedLanguage = i18n.language;
 
     switch (type) {
         case 'rok':
@@ -35,11 +38,13 @@ const PackageItem = ({id, name, vip, price, isReduced, reduced_price, type}) => 
             name: name,
             price: price,
             quantity: 1,
+            price_vi: price_vi,
             type: type,
         };
 
         if(isReduced) {
             newItem.price = reduced_price;
+            newItem.price_vi = reduced_price_vi;
         }
 
         const itemIndex = cart.findIndex((item) => item.id === id && item.type === type);
@@ -69,11 +74,11 @@ const PackageItem = ({id, name, vip, price, isReduced, reduced_price, type}) => 
                 {
                     isReduced ? (
                         <div className="package-price">
-                            <span>{reduced_price}</span>
-                            <span className="discount-price">{price}</span>
+                            <span>{selectedLanguage == 'en'? reduced_price: reduced_price_vi}</span>
+                            <span className="discount-price">{selectedLanguage == 'en'? price: price_vi}</span>
                         </div>
                     ) : (
-                        <h3 className="package-price">${price}</h3>
+                        <h3 className="package-price">${selectedLanguage == 'en'? price: price_vi}</h3>
                     )
                 }
             </div>
