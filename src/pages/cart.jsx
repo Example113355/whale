@@ -22,6 +22,7 @@ const CartPage = () => {
                     <div className="checkout-list">
                         <CheckoutItem type='momo' total={total} />
                         <CheckoutItem type='paypal' total={total} />
+                        <CheckoutItem type='usdt' total={total} />
                         <CheckoutItem type='bank' total={total} />
                     </div>
                 </div>

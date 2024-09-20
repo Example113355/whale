@@ -38,6 +38,10 @@ const PackageItem = ({id, name, vip, price, isReduced, reduced_price, type}) => 
             type: type,
         };
 
+        if(isReduced) {
+            newItem.price = reduced_price;
+        }
+
         const itemIndex = cart.findIndex((item) => item.id === id && item.type === type);
 
         if (itemIndex === -1) {

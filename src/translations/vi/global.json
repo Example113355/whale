@@ -7,6 +7,7 @@
         "header2": "Thanh toán",
         "momo": "Thanh toán bằng Momo",
         "paypal": "Thanh toán bằng Paypal",
+        "usdt": "Thanh toán bằng USDT",
         "bank": "Thanh toán bằng tài khoản ngân hàng",
         "phone": "Số điện thoại",
         "receiver": "Người nhận",
@@ -20,7 +21,9 @@
         "scanBank": "Quét mã QR Ngân hàng",
         "contactZalo": "Liên hệ Zalo để thanh toán",
         "contactTelegram": "Liên hệ Telegram để thanh toán",
-        "contactWhatsapp": "Liên hệ WhatsApp để thanh toán"
+        "contactWhatsapp": "Liên hệ WhatsApp để thanh toán",
+        "usdtAddress": "Địa chỉ USDT",
+        "usdtNetwork": "Mạng lưới"
     },
     "blogs": {
         "1": {

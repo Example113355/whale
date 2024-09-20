@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faDiscord, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { DISCORD } from '../utils/const'
 
 const Footer = () => {
     return (
@@ -23,7 +24,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-social">
-                    <a href="https://discord.com/invite/kDRGWmu9Nf" target="_blank" rel="noreferrer">
+                    <a href={DISCORD} target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={faDiscord} />
                     </a>
                 </div>
