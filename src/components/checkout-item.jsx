@@ -12,7 +12,7 @@ import WhatsappIcon from '../assets/icon/whatsapp.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next'
-import { USD_VND, ZALO, WHATSAPP, PAYPAL, MOMO, USDT, BANKNAME, BANKNUMBER } from '../utils/const';
+import { USD_VND, ZALO, WHATSAPP, PAYPAL, MOMO, USDT, BANKNAME, BANKNUMBER, DISCORD } from '../utils/const';
 
 const CheckoutItem = ({ type, total }) => {
     const [showContent, setShowContent] = useState(false);
@@ -175,9 +175,9 @@ const CheckoutItem = ({ type, total }) => {
                         <img src={ZaloIcon} alt="" />
                         {t("cart.contactZalo")}
                     </button>
-                    <button onClick={() => window.open(ZALO, '_blank', 'noopener,noreferrer')} className='contact-button contact-button-telegram'>
+                    <button onClick={() => window.open(DISCORD, '_blank', 'noopener,noreferrer')} className='contact-button contact-button-telegram'>
                         <img src={TelegramIcon} alt="" />
-                        {t("cart.contactTelegram")}
+                        {t("cart.contactDiscord")}
                     </button>
                     <button onClick={() => window.open(WHATSAPP, '_blank', 'noopener,noreferrer')} className='contact-button contact-button-whatsapp'>
                         <img src={WhatsappIcon} alt="" />
