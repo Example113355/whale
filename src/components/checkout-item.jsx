@@ -89,11 +89,11 @@ const CheckoutItem = ({ type, total }) => {
             return (
                 <div className="checkout-item-content">
                     <div className="content-item">
-                        <span className='content-item-left'>{t("cart.usdtAddress")}: </span>
+                        <span className='content-item-left'>{t("cart.usdtNetwork")}: </span>
                         <span className='content-item-right'>Tron (TRC20)</span>
                     </div>
                     <div className="content-item">
-                        <span className='content-item-left'>{t("cart.usdtNetwork")}: </span>
+                        <span className='content-item-left'>{t("cart.usdtAddress")}: </span>
                         <span className='content-item-right'>TMGdwv5Pi7nxT4asifjzRsaJitU7mYTrwC</span>
                     </div>
                     <div className="content-item content-code">
